@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #fff8ed;
+  color: #2b1b0e;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  font-weight: bold;
+}
+
+.call-btn,
+.main-btn {
+  background: #e67e22;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+/* Hero */
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 10%;
+  background:
+  linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+  ),
+  url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f")
+  center/cover;
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+
+/* Sections */
+
+section {
+  padding: 70px 10%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+
+/* Cards */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 260px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.1);
+}
+
+.card h3 {
+  color: #e67e22;
+  margin-bottom: 15px;
+}
+
+
+/* Location */
+
+.location {
+  background: #ffe8b6;
+}
+
+
+/* Footer */
+
+footer {
+  background: #2b1b0e;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.navbar {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-links {
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 38px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+}
